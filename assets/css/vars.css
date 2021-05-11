@@ -1,5 +1,11 @@
+/* Set Global values for dev happiness and overall consistency */
 :root {
-    --textCol:#fff;
+    /* Set the main text color */
+    --textCol:#fff; 
+
+    /* Set the background color */
     --bgCol:#242424;
+
+    /* Set the backround color for other elements  */
     --panelCol:#363636;
 }

@@ -1,8 +1,10 @@
+/* Apply universal styling to everything not overridden */
 * {
     background-color: var(--bgCol);
     color: var(--textCol);
 }
 
+/* Responsive layout styling here */
 @media screen and (max-width: 768px) {
     /* Do something responsible */
 }
