@@ -1,0 +1,8 @@
+* {
+    background-color: var(--bgCol);
+    color: var(--textCol);
+}
+
+@media screen and (max-width: 768px) {
+    /* Do something responsible */
+}
