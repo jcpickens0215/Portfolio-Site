@@ -5,10 +5,12 @@
     font-family: sans-serif;
 }
 
+/* Set full width */
 body {
     width: 100%;
 }
 
+/* Set header sizes and alignment */
 h1 {
     font-size: 200%;
 }
@@ -28,6 +30,7 @@ h4 {
     text-align: center;
 }
 
+/* Header styling */
 header {
     width: 100%;
     margin: 0;
@@ -47,6 +50,7 @@ header h1 {
     background-color: inherit;
 }
 
+/* Navigation bar styling */
 nav {
     width: 384px;
     height: 32px;
@@ -61,7 +65,6 @@ nav ul {
     right: 0;
     flex: 1 1 300px;
     display: flex;
-    /* align-items: center; */
     justify-content: flex-end;
     background-color: inherit;
 }
@@ -85,6 +88,7 @@ nav a:hover {
     cursor: pointer;
 }
 
+/* Hero image styling */
 .heroBanner {
     height: 700px;
     width: 100%;
@@ -125,6 +129,7 @@ nav a:hover {
     border-radius: 100%;
 }
 
+/* Main content styling */
 .myWork {
     width: 100%;
     display: flex;
@@ -152,6 +157,7 @@ nav a:hover {
     background-color: #888;
 }
 
+/* Make the first project larger */
 .shiny {
     height: 1000px;
 }
@@ -181,13 +187,13 @@ footer ul {
     text-align: center;
 }
 
+/* Responsive layout styling here */
 @media screen and (max-width: 960px) {
     .heroBanner {
         background-size: 200%;
     }
 }
 
-/* Responsive layout styling here */
 @media screen and (max-width: 660px) {
     header {
         flex-direction: column;
