@@ -176,6 +176,7 @@ nav a:hover {
     filter: grayscale(60%)
 }
 
+/* This needs to be after .card img for an override */
 .shiny img {
     height: 1000px;
     object-position: 0 0;
