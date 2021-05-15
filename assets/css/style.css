@@ -4,7 +4,110 @@
     color: var(--textCol);
 }
 
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--panelCol);
+}
+
+header h1 {
+    width: 384px;
+    text-align: left;
+    flex: 1 1 300px;
+    margin: 10px 10px 10px 5%;
+    background-color: inherit;
+}
+
+nav {
+    width: 384px;
+    height: 32px;
+    flex: 1 1 300px;
+    background-color: inherit;
+}
+
+nav ul {
+    width: 384px;
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: inherit;
+}
+
+nav li {
+    width: 128px;
+    margin: 10px;
+    text-align: center;
+    flex-direction: row;
+    flex: 1 0 100px;
+    background-color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: inherit;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.heroBanner {
+    /* position: relative; */
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#bio {
+    /* display: block; */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* padding: auto; */
+    width: 50%;
+    text-align: center;
+
+}
+
 /* Responsive layout styling here */
 @media screen and (max-width: 768px) {
     /* Do something responsible */
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        text-align: center;
+        margin: 10px;
+        height: 66px;
+    }
+
+    .heroBanner {
+        flex-direction: column;
+    }
+
+    #bio {
+        width: 95%;
+    }
 }
