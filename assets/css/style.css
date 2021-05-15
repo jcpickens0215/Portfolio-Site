@@ -67,24 +67,24 @@ nav a:hover {
 }
 
 .heroBanner {
-    /* position: relative; */
     height: 700px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 #bio {
-    /* display: block; */
-    /* position: absolute; */
-    /* left: 50%; */
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* padding: auto; */
     width: 50%;
     text-align: center;
+}
 
+.heroBanner div {
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+    padding: 0;
+    background-color: #fff;
 }
 
 /* Responsive layout styling here */
