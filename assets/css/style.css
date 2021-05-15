@@ -3,6 +3,7 @@
     background-color: var(--bgCol);
     color: var(--textCol);
     font-family: sans-serif;
+    line-height: 1.25;
 }
 
 /* Set full width */
@@ -105,7 +106,9 @@ nav a:hover {
 #bio {
     width: 50%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 30%);
+    background-color: var(--textBackSoft);
+    border: 1px solid var(--textBackSoft);
+    border-radius: var(--textBackBRad);
 }
 
 #bio p {
@@ -142,9 +145,11 @@ nav a:hover {
     position: absolute;
     left: 50%;
     bottom: 10px;
-    padding: 6px;
+    padding: 0 6px;
     transform: translate(-50%, 0);
     background-color: rgba(0, 0, 0, 50%);
+    border: 1px solid var(--textBackSoft);
+    border-radius: var(--textBackBRad);
     z-index: 1;
 }
 
@@ -162,6 +167,10 @@ nav a:hover {
     height: 1000px;
 }
 
+.shiny img {
+    height: 1000px;
+}
+
 .card img {
     width: 100%;
     height: 600px;
@@ -176,10 +185,6 @@ nav a:hover {
 
 .card:hover img {
     filter: grayscale(0%);
-}
-
-.shiny img {
-    height: 1000px;
 }
 
 footer ul {
