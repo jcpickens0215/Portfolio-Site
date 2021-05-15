@@ -13,16 +13,16 @@
         <h1>Justin Pickens</h1>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">My Work</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#About">About Me</a></li>
+                <li><a href="#Work">My Work</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <!-- Defines the hero image section -->
-        <section class="heroBanner">
+        <section class="heroBanner" id="About">
             <div>
                 <img src="./assets/images/Me.jpg" alt="">
             </div>
@@ -32,31 +32,44 @@
             </article>
         </section>
 
+        <h2>My Work</h2>
+
         <!-- My completed projects will be displayed here -->
-        <section class="myWork">
+        <section class="myWork" id="Work">
             <div class="card shiny">
                 <h3>Horiseon Social Services</h3>
-                <img src="./assets/images/Horiseon_social_services_preview.png">
+                <a href="https://github.com/jcpickens0215/Horiseon-Social-Marketing" target="_blank">
+                    <img src="./assets/images/Horiseon_social_services_preview.png">
+                </a>
             </div>
             <div class="card">
                 <h3>Placeholder Project</h3>
-                <!-- Uses a random placeholder image from https://loremflickr.com/ -->
-                <img src="https://loremflickr.com/640/480/cat?lock=9" />
+                <a href="#" target="_blank">
+                    <!-- Uses a placeholder image from https://loremflickr.com/ -->
+                    <img src="https://loremflickr.com/640/480/cat?lock=9" />
+                </a>
+            </div>
+            <div class="card">
+                <h3>Placeholder Project</h3>
+                <a href="#" target="_blank">
+                    <!-- Uses a placeholder image from https://loremflickr.com/ -->
+                    <img src="https://loremflickr.com/640/480/cat?lock=10" />
+                </a>
             </div>
         </section>
 
-        <!-- My contact information -->
-        <section class="contactInfo">
-
-        </section>
     </main>
 
-    <footer>
+    <h2>Contact Me</h2>
+
+    <!-- My contact information -->
+    <footer class="contactInfo" id="Contact">
         <!-- Social links etc -->
         <h4>Links</h4>
         <ul>
-            <li>LinkedIn</li>
-            <li>GitHub</li>
+            <li><a href="mailto:#">Email</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
         </ul>
     </footer>
 </body>

@@ -2,6 +2,7 @@
 * {
     background-color: var(--bgCol);
     color: var(--textCol);
+    font-family: sans-serif;
 }
 
 body {
@@ -12,8 +13,19 @@ h1 {
     font-size: 200%;
 }
 
+h2 {
+    font-size: 175%;
+    margin: 25px;
+    text-align: center;
+}
+
 h3 {
     font-size: 150%;
+}
+
+h4 {
+    font-size: 125%;
+    text-align: center;
 }
 
 header {
@@ -82,6 +94,7 @@ nav a:hover {
     justify-content: center;
     background-image: url("https://loremflickr.com/640/480/cat?lock=2");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 100%;
 }
 
@@ -140,7 +153,7 @@ nav a:hover {
 }
 
 .shiny {
-    height: 800px;
+    height: 1000px;
 }
 
 .card img {
@@ -151,12 +164,27 @@ nav a:hover {
     filter: grayscale(60%)
 }
 
-.card img:hover {
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover img {
     filter: grayscale(0%);
 }
 
 .shiny img {
-    height: 800px;
+    height: 1000px;
+}
+
+footer ul {
+    height: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .heroBanner {
+        background-size: 200%;
+    }
 }
 
 /* Responsive layout styling here */
@@ -173,5 +201,15 @@ nav a:hover {
 
     #bio {
         width: 95%;
+    }
+
+    .heroBanner {
+        background-size: 200%;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .heroBanner {
+        background-size: 300%;
     }
 }
