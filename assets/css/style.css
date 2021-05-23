@@ -172,14 +172,25 @@ nav a:hover {
     width: 100%;
     height: 600px;
     object-fit: cover;
-    object-position: left center;
     filter: grayscale(60%)
 }
 
 /* This needs to be after .card img for an override */
 .shiny img {
     height: 1000px;
+}
+
+/* Image alignment classes */
+.topcenter img {
+    object-position: top center;
+}
+
+.topleft img {
     object-position: 0 0;
+}
+
+.leftcenter img {
+    object-position: left center;
 }
 
 .card:hover {
